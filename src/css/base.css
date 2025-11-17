@@ -1,8 +1,8 @@
 @font-face {
   font-family: "Playfair Display";
   src:
-    url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-Regular.woff") format("woff");
+    url("/fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("/fonts/PlayfairDisplay-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -11,8 +11,8 @@
 @font-face {
   font-family: "Playfair Display";
   src:
-    url("../fonts/PlayfairDisplay-MediumItalic.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-MediumItalic.woff") format("woff");
+    url("/fonts/PlayfairDisplay-MediumItalic.woff2") format("woff2"),
+    url("/fonts/PlayfairDisplay-MediumItalic.woff") format("woff");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
@@ -21,8 +21,8 @@
 @font-face {
   font-family: "Playfair Display";
   src:
-    url("../fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-SemiBold.woff") format("woff");
+    url("/fonts/PlayfairDisplay-SemiBold.woff2") format("woff2"),
+    url("/fonts/PlayfairDisplay-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -31,8 +31,8 @@
 @font-face {
   font-family: "Source Sans Pro";
   src:
-    url("SourceSansPro-Regular.woff2") format("woff2"),
-    url("SourceSansPro-Regular.woff") format("woff");
+    url("/fonts/SourceSansPro-Regular.woff2") format("woff2"),
+    url("/fonts/SourceSansPro-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -41,8 +41,8 @@
 @font-face {
   font-family: "Source Sans Pro";
   src:
-    url("SourceSansPro-Light.woff2") format("woff2"),
-    url("SourceSansPro-Light.woff") format("woff");
+    url("/fonts/SourceSansPro-Light.woff2") format("woff2"),
+    url("/fonts/SourceSansPro-Light.woff") format("woff");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -51,8 +51,8 @@
 @font-face {
   font-family: "Source Sans Pro";
   src:
-    url("SourceSansPro-SemiBold.woff2") format("woff2"),
-    url("SourceSansPro-SemiBold.woff") format("woff");
+    url("/fonts/SourceSansPro-SemiBold.woff2") format("woff2"),
+    url("/fonts/SourceSansPro-SemiBold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -61,15 +61,68 @@
 @font-face {
   font-family: "Source Sans Pro";
   src:
-    url("SourceSansPro-Bold.woff2") format("woff2"),
-    url("SourceSansPro-Bold.woff") format("woff");
+    url("/fonts/SourceSansPro-Bold.woff2") format("woff2"),
+    url("/fonts/SourceSansPro-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 :root {
+  /* font-family */
+  --font-primary: "Source Sans Pro";
+  --font-secondary: "Playfair Display";
+  /* Colors */
+  --color-font-primary: #fafafa;
+  --color-font-secondary: #b02e51;
+  --body-bg: #000000;
+  --bottom-bg: #a93b59;
+  --pop-up-bg: rgba(185, 106, 127, 0.5);
 }
 
 body {
+  font-family: var(--font-primary);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.25;
+  font-style: normal;
+  font-optical-sizing: auto;
+  color: var(--color-font-primary);
+  background-color: var(--body-bg);
+}
+
+.container {
+  max-width: 390px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.section {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 1440px) {
+  .section {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .container {
+    max-width: 1440px;
+    padding: 0 70px;
+  }
 }
