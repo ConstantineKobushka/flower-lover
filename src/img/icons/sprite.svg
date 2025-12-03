@@ -30,5 +30,8 @@
     <symbol id="user" viewBox="0 0 26 32">
       <path fill="#6f6567" style="fill: var(--color7, #6f6567)" d="M13.091 13.868c3.749 0 6.788-3.039 6.788-6.788s-3.039-6.788-6.788-6.788v0c-3.749 0-6.788 3.039-6.788 6.788s3.039 6.788 6.788 6.788v0zM23.273 30.836c0.937 0 1.697-0.76 1.697-1.697v0c0-6.561-5.319-11.879-11.879-11.879s-11.879 5.319-11.879 11.879v0c0 0.937 0.76 1.697 1.697 1.697h20.364z"></path>
     </symbol>
+    <symbol id="burger-menu" viewBox="0 0 54 32">
+      <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M1.6 1.6h51.2M1.6 16h51.2M1.6 30.4h51.2"></path>
+    </symbol>
   </defs>
 </svg>
