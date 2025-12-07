@@ -73,10 +73,11 @@
   --font-primary: "Source Sans Pro";
   --font-secondary: "Playfair Display";
   /* Colors */
-  --color-font-primary: #fafafa;
-  --color-font-secondary: #b02e51;
+  --color-font-primary: #f5ebeb;
+  --color-font-secondary: #a93b59;
   --body-bg: #000000;
   --bottom-bg: #a93b59;
+  --bottom-bg-hover: #b71742;
   --pop-up-bg: rgba(185, 106, 127, 0.5);
 }
 
@@ -92,8 +93,8 @@ body {
 }
 
 .container {
-  max-width: 390px;
-  padding: 0 16px;
+  max-width: 320px;
+  padding: 0 10px;
   margin: 0 auto;
 }
 
@@ -115,17 +116,23 @@ body {
   overflow: hidden;
 }
 
+@media only screen and (min-width: 390px) {
+  .container {
+    max-width: 390px;
+    padding: 0 15px;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding: 0 15px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 0 70px;
+    padding: 0 65px;
   }
   .section {
     padding-top: 50px;
