@@ -51,17 +51,17 @@
   align-items: center;
   gap: 40px;
 }
-.list-item {
+.hero-list-item {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
-.item-img {
+.hero-list-item-img {
   width: 24px;
   height: 24px;
 }
-.item-descr {
+.hero-list-item-text {
   font-size: 12px;
   text-align: center;
 }
@@ -191,11 +191,11 @@
   .hero-btn:focus {
     background-color: var(--bottom-bg-hover);
   }
-  .item-img {
+  .hero-list-item-img {
     width: 40px;
     height: 40px;
   }
-  .item-descr {
+  .hero-list-item-text {
     font-size: 20px;
   }
 }
