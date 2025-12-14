@@ -37,13 +37,14 @@
   margin-bottom: 20px;
 }
 .hero-btn {
-  font-size: 18px;
+  /* font-size: 18px;
+  text-align: center;
   min-width: 100%;
   height: 55px;
   border-radius: 15px;
   color: var(--color-font-primary);
   background-color: var(--bottom-bg);
-  padding: 16px;
+  padding: 16px; */
 }
 .hero-benefits-list {
   display: flex;
@@ -134,7 +135,7 @@
     padding-left: 15px;
   }
   .hero-btn {
-    min-width: 270px;
+    /* min-width: 270px; */
     margin-left: 40px;
   }
   .hero-benefits-list {
@@ -179,9 +180,9 @@
     margin-bottom: 40px;
   }
   .hero-btn {
-    font-size: 24px;
-    min-width: 437px;
-    height: 62px;
+    /* font-size: 24px; */
+    /* min-width: 437px; */
+    /* height: 62px; */
     margin-left: 100px;
   }
   .hero-btn {
