@@ -75,9 +75,13 @@
   /* Colors */
   --color-font-primary: #f5ebeb;
   --color-font-secondary: #a93b59;
+  --color-font-text: #7f7f7f;
   --body-bg: #000000;
   --bottom-bg: #a93b59;
   --bottom-bg-hover: #b71742;
+  --badge--sale: #a93b59;
+  --badge--new: #b96a7f;
+  --badge--water: #55b8ff;
   --pop-up-bg: rgba(185, 106, 127, 0.5);
 }
 
@@ -101,6 +105,32 @@ body {
 .section {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.section-title {
+  font-family: var(--font-secondary);
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--color-font-secondary);
+  margin-bottom: 70px;
+  position: relative;
+}
+
+.about-title::before {
+  position: absolute;
+  content: "";
+  bottom: -7px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-font-secondary);
+}
+
+.section-block-title {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  font-size: 24px;
+  color: var(--color-font-primary);
+  margin-bottom: 8px;
 }
 
 .visually-hidden {
@@ -127,15 +157,29 @@ body {
   .container {
     max-width: 768px;
   }
+  .section-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 100px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .container {
     max-width: 1440px;
-    padding: 0 64px;
+    padding: 0 61px;
   }
   .section {
     padding-top: 50px;
     padding-bottom: 50px;
+  }
+  .section-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 140px;
+  }
+  .section-block-title {
+    font-size: 32px;
+    margin-bottom: 16px;
   }
 }
