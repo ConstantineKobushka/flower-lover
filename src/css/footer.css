@@ -1,0 +1,131 @@
+.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu {
+  font-size: 14px;
+}
+.footer-menu-list {
+}
+.footer-menu-item {
+}
+.footer-menu-item + .footer-menu-item {
+  margin-top: 24px;
+}
+.footer-menu-link {
+}
+.footer-desctop-logo-social-wrapper {
+  display: none;
+}
+.footer-desctop-logo {
+}
+.footer-desctop-logo-img {
+}
+.footer-desctop-social-list {
+}
+.footer-desctop-social-item {
+}
+.footer-desctop-social-link {
+}
+.footer-desctop-social-icon {
+}
+.footer-contacts {
+  font-size: 14px;
+  font-style: normal;
+  text-align: center;
+}
+.footer-contacts-list {
+}
+.footer-contacts-item {
+}
+.footer-contacts-item + .footer-contacts-item {
+  margin-top: 15px;
+}
+.footer-contacts-link {
+  margin-bottom: 4px;
+}
+.footer-contacts-descr {
+}
+.footer-contacts-descr + .footer-contacts-descr {
+  margin-top: 4px;
+}
+.footer-mobile-logo-social-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  margin-top: 30px;
+}
+.footer-mobile-logo {
+}
+.footer-mobile-logo-img {
+}
+.footer-mobile-social-list {
+  display: flex;
+  gap: 24px;
+}
+.footer-mobile-social-item {
+}
+.footer-mobile-social-link {
+}
+.footer-mobile-social-icon {
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-menu {
+    font-size: 20px;
+  }
+  .footer-menu-item + .footer-menu-item {
+    margin-top: 52px;
+  }
+  .footer-desctop-logo-social-wrapper {
+    display: block;
+  }
+  .footer-desctop-logo {
+    margin-bottom: 55px;
+  }
+  .footer-desctop-logo-img {
+  }
+  .footer-desctop-social-list {
+    display: flex;
+    gap: 46px;
+  }
+  .footer-desctop-social-item {
+  }
+  .footer-desctop-social-link {
+  }
+  .footer-desctop-social-icon {
+  }
+  .footer-mobile-logo-social-wrapper {
+    display: none;
+  }
+  .footer-contacts {
+    font-size: 20px;
+  }
+  .footer-contacts-item + .footer-contacts-item {
+    margin-top: 20px;
+  }
+  .footer-contacts-link {
+    margin-bottom: 10px;
+}
+  .footer-contacts-descr + .footer-contacts-descr {
+  margin-top: 10px;
+}
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+  .footer-menu-link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .footer-menu-link:hover,
+  .footer-menu-link:focus {
+    color: var(--color-font-secondary);
+  }
+}

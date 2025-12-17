@@ -103,6 +103,8 @@ body {
 }
 
 .section {
+  max-width: 320px;
+  margin: 0 auto;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -155,11 +157,19 @@ body {
     max-width: 390px;
     padding: 0 15px;
   }
+  .section {
+    max-width: 390px;
+    margin: 0 auto;
+  }
 }
 
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+  }
+  .section {
+    max-width: 768px;
+    margin: 0 auto;
   }
   .section-title {
     font-size: 36px;
@@ -177,6 +187,8 @@ body {
     padding: 0 61px;
   }
   .section {
+    max-width: 1440px;
+    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 50px;
   }
