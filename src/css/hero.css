@@ -4,6 +4,7 @@
   background-size: 320px 277px;
   background-position: center top;
   min-height: 280px;
+  position: relative;
 }
 .hero-inner {
   background: rgba(255, 255, 255, 0.6);
@@ -98,8 +99,8 @@
   .hero::after {
     position: absolute;
     content: "";
-    top: 250px;
-    right: 180px;
+    top: 130px;
+    right: 165px;
     transform: rotate(-150deg);
     width: 262px;
     height: 260px;
@@ -127,7 +128,6 @@
     padding-left: 15px;
   }
   .hero-btn {
-    /* min-width: 270px; */
     margin-left: 40px;
   }
   .hero-benefits-list {
@@ -149,7 +149,7 @@
     min-height: 720px;
   }
   .hero::after {
-    top: 375px;
+    top: 250px;
     right: 330px;
     width: 485px;
     height: 481px;
@@ -172,9 +172,6 @@
     margin-bottom: 40px;
   }
   .hero-btn {
-    /* font-size: 24px; */
-    /* min-width: 437px; */
-    /* height: 62px; */
     margin-left: 100px;
   }
   .hero-btn {
