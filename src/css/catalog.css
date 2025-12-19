@@ -111,6 +111,7 @@
   margin-left: auto;
   margin-right: auto;
   width: 270px;
+  min-width: 270px;
   display: block;
 }
 
@@ -126,15 +127,15 @@
     margin-bottom: 40px;
   }
   .catalog-products-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px 75px;
-  margin-bottom: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px 75px;
+    margin-bottom: 40px;
   }
   .catalog-products-item {
-  width: calc((100% - 150px) / 2);
+    width: calc((100% - 150px) / 2);
   }
   .catalog-products-badge {
     top: 240px;
@@ -143,9 +144,12 @@
 
 @media only screen and (min-width: 1440px) {
   .catalog-products-list {
-  padding: 0 100px;
+    padding: 0 100px;
   }
   .catalog-products-item {
-  width: calc((100% - 225px) / 3);
+    width: calc((100% - 225px) / 3);
+  }
+  .catalog-view-all {
+    width: 437px;
   }
 }
