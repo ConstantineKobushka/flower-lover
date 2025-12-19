@@ -1,0 +1,151 @@
+.catalog {
+}
+.catalog-title {
+  width: 286px;
+  text-align: right;
+  margin-left: 0;
+  margin-right: auto;
+}
+.catalog-block-title {
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 28px;
+  color: var(--color-font-primary);
+  text-align: center;
+  margin-bottom: 30px;
+}
+.catalog-products-list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.catalog-products-item {
+  width: 240px;
+  border-radius: 15px;
+  color: #000000;
+  background-color: #ffffff;
+  padding: 16px;
+  position: relative;
+}
+.catalog-products-favorite-btn {
+  line-height: 0;
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin-left: auto;
+  margin-right: 0;
+}
+.catalog-products-favorite-icon {
+}
+.catalog-products-picture {
+}
+.catalog-products-img {
+}
+.catalog-products-badge {
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--color-font-primary);
+  width: 208px;
+  height: 40px;
+  border-radius: 22px;
+  padding: 12px;
+  position: absolute;
+  top: 195px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.catalog-products-badge--sale {
+  background-color: var(--badge--sale);
+}
+.catalog-products-badge--new {
+  background-color: var(--badge--new);
+}
+.catalog-products-badge--water {
+  background-color: var(--badge--water);
+}
+.catalog-products-price-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.catalog-products-price {
+  font-size: 24px;
+  font-weight: 400;
+}
+.catalog-products-old-price {
+  font-size: 16px;
+  align-self: flex-end;
+}
+.catalog-products-old-price--visible {
+}
+.catalog-products-title {
+  text-align: center;
+}
+.catalog-products-box-hover {
+}
+.catalog-products-descr {
+}
+.catalog-products-form {
+}
+.quantity-control {
+}
+.quantity-btn {
+}
+.quantity-input {
+}
+.catalog-products-btn {
+}
+.catalog-products-badge--new {
+}
+.catalog-products-badge--water {
+}
+.catalog-view-all {
+  margin-left: auto;
+  margin-right: auto;
+  width: 270px;
+  display: block;
+}
+
+@media only screen and (min-width: 390px) {
+  .catalog-title {
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .catalog-block-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .catalog-products-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px 75px;
+  margin-bottom: 40px;
+  }
+  .catalog-products-item {
+  width: calc((100% - 150px) / 2);
+  }
+  .catalog-products-badge {
+    top: 240px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .catalog-products-list {
+  padding: 0 100px;
+  }
+  .catalog-products-item {
+  width: calc((100% - 225px) / 3);
+  }
+}
