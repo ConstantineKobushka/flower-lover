@@ -122,6 +122,13 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .catalog {
+    background-image: url("../img/catalog/catalog-bg.png");
+    background-repeat: no-repeat;
+    background-size: 753px 1283px;
+    background-position: right center;
+    min-height: 1283px;
+  }
   .catalog-block-title {
     font-size: 36px;
     margin-bottom: 40px;
@@ -142,7 +149,16 @@
   }
 }
 
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .catalog {
+    background-image: url("../img/catalog/catalog-bg@2x.png");
+  }
+}
+
 @media only screen and (min-width: 1440px) {
+  .catalog {
+    background-position: right top;
+  }
   .catalog-products-list {
     padding: 0 100px;
   }
