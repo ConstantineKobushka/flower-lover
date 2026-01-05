@@ -20,7 +20,6 @@ function closeMobileMenuHandler() {
 
 function scrollToSection(e) {
   e.stopPropagation();
-  console.log(e.target);
   if (e.target.closest('.mobile-menu-link')) {
     closeMobileMenuHandler();
   }
