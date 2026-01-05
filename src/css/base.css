@@ -111,6 +111,10 @@ body {
   background-color: var(--bottom-bg);
 }
 
+.no-scroll {
+  overflow: hidden;
+}
+
 .container {
   max-width: 320px;
   padding: 0 10px;

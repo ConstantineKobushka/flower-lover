@@ -36,5 +36,8 @@
     <symbol id="burger-menu" viewBox="0 0 54 32">
       <path fill="none" stroke="#fafafa" style="stroke: var(--color1, #fafafa)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.2" d="M1.6 1.6h51.2M1.6 16h51.2M1.6 30.4h51.2"></path>
     </symbol>
+    <symbol id="menu-close-btn" viewBox="0 0 32 32">
+      <path fill="#fafafa" style="fill: var(--color1, #fafafa)" d="M16 12.649l11.733-11.733 3.351 3.351-11.733 11.733 11.733 11.733-3.351 3.351-11.733-11.733-11.733 11.733-3.351-3.351 11.733-11.733-11.733-11.733 3.351-3.351 11.733 11.733z"></path>
+    </symbol>
   </defs>
 </svg>
