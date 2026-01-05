@@ -37,8 +37,6 @@
   color: var(--color-font-secondary);
   margin-bottom: 20px;
 }
-.hero-btn {
-}
 .hero-benefits-list {
   display: flex;
   justify-content: center;

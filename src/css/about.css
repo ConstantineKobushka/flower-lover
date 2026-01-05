@@ -1,5 +1,3 @@
-.about {
-}
 .about-title {
   width: 290px;
   margin-left: auto;
@@ -16,8 +14,6 @@
 .about-benefits-item:nth-child(2n) {
   margin-left: auto;
   margin-right: 0;
-}
-.about-benefits-picture {
 }
 .about-benefits-img {
   border-radius: 16px;
