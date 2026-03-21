@@ -3,24 +3,36 @@ const mobileCloseBtn = document.querySelector('.mobile-close-btn');
 const mobileOverlay = document.querySelector('.mobile-overlay');
 const mobileMenu = document.querySelector('.mobile-inner');
 
-burgerBtn.addEventListener('click', openMobileMenuHandler);
-mobileCloseBtn.addEventListener('click', closeMobileMenuHandler);
-mobileOverlay.addEventListener('click', closeMobileMenuHandler);
-mobileMenu.addEventListener('click', scrollToSection);
+burgerBtn.addEventListener('click', onBurgerBtnClick);
+mobileCloseBtn.addEventListener('click', onMobileCloseBtnClick);
+mobileOverlay.addEventListener('click', onMobileOverlayClick);
+mobileMenu.addEventListener('click', onMobileMenuClick);
 
-function openMobileMenuHandler() {
+function onBurgerBtnClick() {
+  openMobileMenu();
+}
+
+function onMobileCloseBtnClick() {
+  closeMobileMenu();
+}
+
+function onMobileOverlayClick() {
+  closeMobileMenu();
+}
+
+function openMobileMenu() {
   mobileOverlay.classList.add('is-open');
   document.body.classList.add('no-scroll');
 }
 
-function closeMobileMenuHandler() {
+function closeMobileMenu() {
   mobileOverlay.classList.remove('is-open');
   document.body.classList.remove('no-scroll');
 }
 
-function scrollToSection(e) {
+function onMobileMenuClick(e) {
   e.stopPropagation();
   if (e.target.closest('.mobile-menu-link')) {
-    closeMobileMenuHandler();
+    closeMobileMenu();
   }
 }
